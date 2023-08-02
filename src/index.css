@@ -60,6 +60,7 @@ button{
   height: 25px;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .filled{
