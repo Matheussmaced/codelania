@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@300;400;700&family=Hanken+Grotesk:wght@800&family=Inter:wght@300;500&family=Lexend+Deca&family=Manrope:wght@800&family=Montserrat:ital,wght@0,300;0,500;1,500&family=Open+Sans:wght@300;400&family=Outfit:wght@200;300;800&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,800&family=Red+Hat+Display:wght@300;400&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@300;400;700&family=Hanken+Grotesk:wght@800&family=Inter:wght@300;500&family=Lexend+Deca&family=Manrope:wght@800&family=Montserrat:ital,wght@0,300;0,500;1,500&family=Open+Sans:wght@300;400&family=Outfit:wght@200;300;800&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,800&family=Red+Hat+Display:wght@300;400&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+  background-color: #F3F5F7;
+}
+
+header{
+  width: 100%;
+  background: linear-gradient(45deg, #574AE8 0%, #3EA1DB 100%);
+  margin-bottom: 100px;
+}
+
+header #informationsHeader{
+  display: flex;
+  align-items: center;
+  width: 46.8%;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  padding-top: 41px;
+  padding-bottom: 73px;
+}
+
+header input{
+  width: 46.8%;
+  background: rgba(255, 255, 255, 0.20);
+  border: none;
+  border-radius: 5px;
+  height: 65px;
+  margin-bottom: 41px;
+  outline: none;
+  background-image: url(assets/img/ant-design_search-outlined.svg);
+  background-repeat: no-repeat;
+  background-position: 17px center;
+}
+#barSearch{
+  display: flex;
+  justify-content: center;
+}
+#barSearch input{
+  font-size: 18px;
+  color: #fff;
+  padding-left: 64px;
+}
+
+input::placeholder{
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  opacity: 0.5;
+}
+
+button{
+  background-image: url(../src/assets/img/codicon_heart.png);
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.filled{
+  background-image: url(../src/assets/img/codicon_heart_PREENCHIDO.png);
+}
+
+/*container body*/
+
+.containerBody{
+  width: 46.8%;
+  margin: auto;
+  padding: 23px 25px 25px 25px;
+  background-color: #fff;
+  margin-top: 50px;
+}
+.btnHeart{
+  display: flex;
+  justify-content: space-between;
+}
+p{
+  margin-bottom: 22px;
+  color: #71717171;
+  font-size: 16px;
+}
+.pBody{
+  font-size: 18px;
+}
+h3{
+  margin-bottom: 8px;
+  font-size: 26px;
+  color: #1A202C;
+}
+
+/*Responsivo*/
+
+@media(max-width: 1200px){
+
+  header #informationsHeader{
+    width: 90%;
+  }
+
+  header{
+    margin-bottom: 50 px;
+  }
+
+  header input{
+    width: 90%;
+    height: 40px;
+    background-size: 15.6px;
+    background-position-x: 9.19px;
+  }
+  #barSearch input{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 38px;
+  }
+  input::placeholder{
+    font-size: 14px;
+  }
+  h1, h2{
+    font-size: 18px;
+  }
+  /*body*/
+  .containerBody{
+    width: 90%;
+    margin: auto;
+    padding: 23px 25px 25px 25px;
+    background-color: #fff;
+    margin-top: 25px;
+  }
+  p, .pBody{
+    font-size: 14px;
+  }
+  h3{
+    font-size: 18px;
+  }
+
+}
