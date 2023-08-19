@@ -1,40 +1,9 @@
 import {useState} from 'react';
 
 const Body = () => {
-
-    const clicou1 = () =>{
-        if(classe === 'classeInicial'){
-            setClasse('filled')
-        }else{
-            setClasse('classeInicial')
-        }
-    }
-
-    const clicou2 = () =>{
-        if(classe2 === 'classeInicial'){
-            setClasse2('filled')
-        }else{
-            setClasse2('classeInicial')
-        }
-    }
-
-    const clicou3 = () =>{
-        if(classe3 === 'classeInicial'){
-            setClasse3('filled')
-        }else{
-            setClasse3('classeInicial')
-        }
-    }
-
-    const clicou4 = () =>{
-        if(classe4 === 'classeInicial'){
-            setClasse4('filled')
-        }else{
-            setClasse4('classeInicial')
-        }
-    }
-
-
+  const toggleClass = (classe, setClasse) =>{
+    setClasse((item) => item === 'classeInicial' ? 'filled' : 'classeInicial')
+  }
 
     const [classe, setClasse] = useState('classeInicial');
     const [classe2, setClasse2] = useState('classeInicial');
@@ -47,7 +16,7 @@ const Body = () => {
       <div className="containerBody" id="container1">
         <div className="btnHeart">
           <p>02 de jul, 2021</p>
-          <button onClick={clicou1} className={classe} ></button>
+          <button onClick={() => toggleClass(classe, setClasse)} className={classe} ></button>
         </div>
         <h3>Agora é oficial: o Windows 11 está vindo</h3>
         <p className="pBody">
@@ -60,7 +29,7 @@ const Body = () => {
       <div className="containerBody" id="container2">
         <div className="btnHeart">
           <p>02 de jul, 2021</p>
-          <button onClick={clicou2} className={classe2}></button>
+          <button onClick={() => toggleClass(classe2, setClasse2)} className={classe2}></button>
         </div>
         <h3>Tim Berners-Lee vai leiloar código-fonte da web</h3>
         <p className="pBody">
@@ -76,7 +45,7 @@ const Body = () => {
       <div className="containerBody" id="container3">
         <div className="btnHeart">
           <p>02 de jul, 2021</p>
-          <button onClick={clicou3} className={classe3} ></button>
+          <button onClick={() => toggleClass(classe3, setClasse3)} className={classe3} ></button>
         </div>
         <h3>Tem Firefox novo no pedaço e você vai querer migrar</h3>
         <p className="pBody">
@@ -88,7 +57,7 @@ const Body = () => {
       <div className="containerBody" id="container4">
         <div className="btnHeart">
           <p>02 de jul, 2021</p>
-          <button onClick={clicou4} className={classe4} ></button>
+          <button onClick={() => toggleClass(classe4, setClasse4)} className={classe4} ></button>
         </div>
         <h3>John McAfee, criador do antivírus McAfee, morre</h3>
         <p className="pBody">
